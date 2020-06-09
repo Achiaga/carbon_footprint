@@ -5,13 +5,21 @@ import { businessCarbonData } from '../../data/businessCarbonData';
 import { individualCarbonData } from '../../data/individualCarbonData';
 import { simpleIndividualCarbonData } from '../../data/simpleIndividualCarbonData';
 import { fakeData } from '../../data/fakeData';
-
+import ResultsBackground from './Background';
 import logo from '../../assets/logo.png';
 import earth from '../../assets/earth.png';
 
 const ResultWrapper = styled.div`
 	color: #000;
 	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
 `;
 const Box = styled.div`
 	margin: auto;
@@ -20,41 +28,51 @@ const Box = styled.div`
 const LogoWrapper = styled.div`
 	position: absolute;
 	width: inherit;
-	top: -3em;
 	left: 1em;
 `;
 const LogoStyle = styled.img`
-	width: 20vw;
+	width: 12vw;
 	margin: auto;
 `;
 
-const TitleResult = styled.div`
-	font-size: 30px;
+const TitleResult = styled.h1`
 	text-transform: uppercase;
-	margin: auto;
-	padding-top: 2em;
 `;
-const SubTitleResult = styled.div`
-	font-size: 30px;
+const SubTitleResult = styled.h3`
+	padding-top: 0.3em;
 	font-weight: 900;
 	margin: auto;
-	margin-top: 2em;
 	margin-bottom: 1.5em;
 `;
 const DataResult = styled.div`
-	font-size: 46px;
-	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
+const DataResultTitle = styled.h1`
+	margin: 0px 10px;
+	padding: 0px;
+	font-size: 40px;
+`;
+const DataResultExtra = styled.h3`
+	margin: 0;
+	padding: 0px;
+`;
+
 const AwarenessText = styled.div`
-	font-size: 30px;
+	font-size: 20px;
 	margin: auto;
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
+	padding: 0px 20px;
 `;
 const AwarenessResult = styled.div`
 	font-size: 40px;
 	margin: auto;
 	margin-bottom: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 const AwarenessWrapper = styled.div`
 	display: flex;
@@ -68,12 +86,14 @@ const AwarenessImg = styled.img`
 	margin: auto;
 `;
 const AwarenessButton = styled.button`
-	width: 10vw;
+	background: -webkit-linear-gradient(white, #38495a);
+	border-radius: 20px;
 	margin: 1em;
-	background: none;
 	border-radius: 2px;
 	padding: 0.5em;
 	font-size: 20px;
+	padding: 0.5em;
+	font-size: 12px;
 	&:hover {
 		cursor: pointer;
 	}
@@ -216,30 +236,39 @@ export function Result({ stateScreen }) {
 	const countEarths = 5;
 
 	return (
-		<ResultWrapper>
-			<LogoWrapper>
-				<Link to='/'>
-					<LogoStyle src={logo} alt='logo' />
-				</Link>
-			</LogoWrapper>
-			<Box>
-				<TitleResult>Results</TitleResult>
-				<SubTitleResult>Your carbon footprint is :</SubTitleResult>
-				<DataResult>{result} ton CO2</DataResult>
-				<AwarenessText>
-					If everybody had your lifestyle, we would need
-				</AwarenessText>
-				<AwarenessResult>
-					{countEarths} Earths<AwarenessButton>See How</AwarenessButton>{' '}
-				</AwarenessResult>
-				<AwarenessWrapper>
-					<AwarenessImg src={earth}></AwarenessImg>
-					<AwarenessImg src={earth}></AwarenessImg>
-					<AwarenessImg src={earth}></AwarenessImg>
-					<AwarenessImg src={earth}></AwarenessImg>
-					<AwarenessImg src={earth}></AwarenessImg>
-				</AwarenessWrapper>
-			</Box>
-		</ResultWrapper>
+		<>
+			<ResultsBackground />
+			<ResultWrapper>
+				<LogoWrapper>
+					<Link to='/'>
+						<LogoStyle src={logo} alt='logo' />
+					</Link>
+				</LogoWrapper>
+				<Box>
+					<TitleResult>Congratulations 🥳🥳</TitleResult>
+					<SubTitleResult>Your carbon footprint is :</SubTitleResult>
+					<DataResult>
+						<DataResultTitle> {result} </DataResultTitle>
+						<DataResultExtra> ton CO2 </DataResultExtra>
+					</DataResult>
+					<AwarenessText>
+						If everybody had your lifestyle, we would need
+					</AwarenessText>
+					<AwarenessResult>
+						{countEarths} Earths<AwarenessButton>See How</AwarenessButton>{' '}
+					</AwarenessResult>
+					<AwarenessWrapper>
+						<AwarenessImg src={earth}></AwarenessImg>
+						<AwarenessImg src={earth}></AwarenessImg>
+						<AwarenessImg src={earth}></AwarenessImg>
+						<AwarenessImg src={earth}></AwarenessImg>
+						<div>
+							<AwarenessImg src={earth}></AwarenessImg>
+						</div>
+					</AwarenessWrapper>
+				</Box>
+			</ResultWrapper>
+		</>
+		// </ResultsBackground>
 	);
 }
