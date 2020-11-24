@@ -78,7 +78,7 @@ const Quiz = ({ children, state, dispatch }) => {
 	return (
 		<QuizWrapper>
 			<Navbar />
-			<ButtonArrow handleClick={handleClick} content='back' />
+			<ButtonArrow handleClick={handleClick} content={quizIndex === 0 ? 'first' : 'back'} />
 			<QuizBox>
 				<TransitionGroup
 					style={{ display: 'flex' }}

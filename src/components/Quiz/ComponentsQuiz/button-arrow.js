@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Block } from '@styled-icons/boxicons-regular/Block';
 import { ArrowLeftShort } from '@styled-icons/bootstrap';
 import { ArrowRightShort } from '@styled-icons/bootstrap';
 import { Check } from '@styled-icons/remix-fill';
@@ -36,8 +37,9 @@ const SVG = styled.button`
 	}
 `;
 
-const Buttons = ({ content, handleClick, mobile }) => {
+const Buttons = ({ content, handleClick, mobile}) => {
 	const Selected = {
+		first: Block,
 		next: ArrowRightShort,
 		back: ArrowLeftShort,
 		done: Check,

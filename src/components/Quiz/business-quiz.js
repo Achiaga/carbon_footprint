@@ -76,8 +76,9 @@ const reducer = (state, action) => {
 		case 'done':
 			return state;
 		case 'back':
+		case 'first':
 			if (questionIndex === 0) return state;
-			return { ...state, questionIndex: questionIndex - 1 };
+			return { ...state, questionIndex: questionIndex - 1 }
 		case 'reset':
 			return { ...state, questionIndex: 0 };
 		case 'addRow':
