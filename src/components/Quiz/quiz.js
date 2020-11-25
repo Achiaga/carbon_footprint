@@ -74,11 +74,14 @@ const Quiz = ({ children, state, dispatch }) => {
 		if (e.currentTarget.id === 'next') return setSlideTransition('next');
 		return setSlideTransition('back');
 	};
+	const getButtonArrowContent = () => {
+		return quizIndex === 0 ? 'first' : 'back';
+	};
 
 	return (
 		<QuizWrapper>
 			<Navbar />
-			<ButtonArrow handleClick={handleClick} content='back' />
+			<ButtonArrow handleClick={handleClick} content={getButtonArrowContent()} />
 			<QuizBox>
 				<TransitionGroup
 					style={{ display: 'flex' }}
