@@ -22,6 +22,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Usuario001",
+      "name": "José Manuel ",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7135867?v=4",
+      "profile": "http://www.apperturesolutions.com",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

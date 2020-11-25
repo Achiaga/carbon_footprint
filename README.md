@@ -4,10 +4,8 @@
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->	
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)	
-[![GitHub stars](https://img.shields.io/github/stars/Achiaga/carbon_footprint.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Achiaga/carbon_footprint/stargazers/)
-[![GitHub forks](https://img.shields.io/github/forks/Achiaga/carbon_footprint.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Achiaga/carbon_footprint)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -115,6 +113,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
   <tr>
     <td align="center"><a href="https://github.com/Achiaga"><img src="https://avatars0.githubusercontent.com/u/44972334?v=4" width="100px;" alt=""/><br /><sub><b>Alfonso Achiaga</b></sub></a><br /><a href="https://github.com/Achiaga/carbon_footprint/commits?author=Achiaga" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/thepranavjain"><img src="https://avatars1.githubusercontent.com/u/27448565?v=4" width="100px;" alt=""/><br /><sub><b>Pranav Jain</b></sub></a><br /><a href="https://github.com/Achiaga/carbon_footprint/commits?author=thepranavjain" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.apperturesolutions.com"><img src="https://avatars1.githubusercontent.com/u/7135867?v=4" width="100px;" alt=""/><br /><sub><b>José Manuel </b></sub></a><br /><a href="https://github.com/Achiaga/carbon_footprint/commits?author=Usuario001" title="Code">💻</a> <a href="https://github.com/Achiaga/carbon_footprint/issues?q=author%3AUsuario001" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
