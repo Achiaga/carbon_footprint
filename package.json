@@ -20,7 +20,7 @@
 		"react-transition-group": "^4.4.1",
 		"styled-components": "^5.1.1",
 		"styled-icons": "^10.15.0",
-		"three": "^0.119.1",
+		"three": "^0.125.0",
 		"webfontloader": "^1.6.28",
 		"yarn": "^1.22.4"
 	},
